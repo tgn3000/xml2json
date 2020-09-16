@@ -1,5 +1,6 @@
 cmake_minimum_required (VERSION 3.0.2) 
 project(xml2json)
+set(CMAKE_CXX_STANDARD 14)
 
 find_package(RapidJSON REQUIRED)
 message(STATUS "RapidJSON_FOUND = ${RapidJSON_FOUND}")
@@ -12,5 +13,5 @@ include_directories(
 	${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-add_executable(main ../xml2json.cpp)
+add_executable(main ${CMAKE_SOURCE_DIR}/xml2json.cpp)
 target_link_libraries(main xmljson)

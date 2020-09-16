@@ -12,3 +12,5 @@ set_target_properties(xmljson PROPERTIES
     CLEAN_DIRECT_OUTPUT 1
     COMPILE_FLAGS "-fvisibility=hidden"
 )
+
+install(TARGETS xmljson DESTINATION lib)
