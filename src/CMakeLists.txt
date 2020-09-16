@@ -10,4 +10,5 @@ add_library(xmljson SHARED ${xml2json_cpp})
 set_target_properties(xmljson PROPERTIES
     INSTALL_RPATH_USE_LINK_PATH TRUE
     CLEAN_DIRECT_OUTPUT 1
+    COMPILE_FLAGS "-fvisibility=hidden"
 )

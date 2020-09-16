@@ -13,3 +13,4 @@ include_directories(
 )
 
 add_executable(main ../xml2json.cpp)
+target_link_libraries(main xmljson)
