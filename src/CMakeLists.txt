@@ -6,11 +6,11 @@ include_directories(
 	${CMAKE_CURRENT_SOURCE_DIR}/../include
 )
 
-add_library(xmljson SHARED ${xml2json_cpp})
-set_target_properties(xmljson PROPERTIES
+add_library(xml2json SHARED ${xml2json_cpp})
+set_target_properties(xml2json PROPERTIES
     INSTALL_RPATH_USE_LINK_PATH TRUE
     CLEAN_DIRECT_OUTPUT 1
     COMPILE_FLAGS "-fvisibility=hidden"
 )
 
-install(TARGETS xmljson DESTINATION lib)
+install(TARGETS xml2json DESTINATION lib)

@@ -7,6 +7,7 @@ message(STATUS "RapidJSON_FOUND = ${RapidJSON_FOUND}")
 message(STATUS "RapidJSON_INCLUDE_DIRS = ${RapidJSON_INCLUDE_DIRS}")
 
 add_subdirectory(src)
+add_subdirectory(include)
 
 include_directories(
 	${RapidJSON_INCLUDE_DIRS}

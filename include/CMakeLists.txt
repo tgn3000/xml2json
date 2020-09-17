@@ -1,2 +1,2 @@
 file(GLOB xml2json_hpp "*.hpp")
-install(TARGETS FILES DESTINATION include/xml2json)
+install(FILES ${xml2json_hpp} DESTINATION include/xml2json)
