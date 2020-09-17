@@ -15,4 +15,12 @@ include_directories(
 )
 
 add_executable(main ${CMAKE_SOURCE_DIR}/xml2json.cpp)
-target_link_libraries(main xmljson)
+target_link_libraries(main xml2json)
+
+configure_file(cmake/Xml2JsonConfig.cmake.in
+	"${CMAKE_INSTALL_PREFIX}/lib/cmake/Xml2Json/Xml2JsonConfig.cmake" @ONLY
+)
+
+configure_file(cmake/Xml2JsonConfigVersion.cmake.in
+	"${CMAKE_INSTALL_PREFIX}/lib/cmake/Xml2Json/Xml2JsonConfigVersion.cmake" @ONLY
+)

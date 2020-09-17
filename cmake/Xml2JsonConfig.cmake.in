@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+
+set(Xml2Json_INCLUDE_DIRS @CMAKE_INSTALL_PREFIX@/include)
+set(Xml2Json_LIBRARIES @CMAKE_INSTALL_PREFIX@/lib/libxml2json@CMAKE_SHARED_LIBRARY_SUFFIX@)
+set(Xml2Json_FOUND yes)
